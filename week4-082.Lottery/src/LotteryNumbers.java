@@ -26,7 +26,7 @@ public class LotteryNumbers {
         int i = 0;
         int lottery = 0;
         while (i < lotteryLength) {
-            lottery = random.nextInt(max - min + 1) + min;
+            lottery = random.nextInt(max) + min;
             if (!this.numbers.contains(lottery)) {
                 this.numbers.add(lottery);
                 i++;
